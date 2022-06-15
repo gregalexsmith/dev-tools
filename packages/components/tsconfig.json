@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "target": "ES2015",
+        "module": "es6",
+        "strict": true,
+        "esModuleInterop": true,
+        "declaration": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "jsx": "react",
+        "outDir": "build",
+        "moduleResolution": "node"
+    },
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "display": "Recommended",
+    "include": [
+        "src/**/*.ts*"
+    ]
+}

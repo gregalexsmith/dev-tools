@@ -1,0 +1,16 @@
+{
+  "name": "dev-tools",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "publish": "npm run dev:publish --workspaces --if-present",
+    "dev:publish": "npm run build && npm run publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gregalexsmith/dev-tools.git"
+  },
+  "workspaces": [
+    "./packages/*"
+  ]
+}
