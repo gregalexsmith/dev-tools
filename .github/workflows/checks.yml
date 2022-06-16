@@ -2,9 +2,8 @@ name: Checks
 
 on:
   push:
-    paths:
-      - "packages/**"
-      - ".github/workflows/**"
+  pull_request:
+    types: [opened, synchronize]
 
 jobs:
   build:
