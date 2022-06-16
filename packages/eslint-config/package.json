@@ -6,7 +6,8 @@
   "scripts": {
     "lint": "eslint --fix",
     "lint:ci": "eslint .",
-    "publish:local": "yalc publish"
+    "publish:local": "yalc publish",
+    "publish:npm": "npm publish --access public"
   },
   "devDependencies": {
     "@types/node": "^18.0.0",
