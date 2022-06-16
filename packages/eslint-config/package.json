@@ -1,0 +1,32 @@
+{
+  "name": "@gregalexsmith/eslint-config",
+  "description": "eslint config",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --fix",
+    "lint:ci": "eslint .",
+    "publish:local": "yalc publish",
+    "publish:npm": "npm publish --access public"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.28.0",
+    "@typescript-eslint/parser": "^5.28.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-typescript": "^2.7.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.30.0"
+  },
+  "author": "greg smith",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gregalexsmith/dev-tools.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gregalexsmith/dev-tools/issues"
+  },
+  "homepage": "https://github.com/gregalexsmith/dev-tools#readme"
+}

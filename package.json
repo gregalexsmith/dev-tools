@@ -2,8 +2,10 @@
   "name": "dev-tools",
   "version": "1.0.0",
   "scripts": {
+    "lint": "npm run lint --workspaces --if-present",
+    "lint:ci": "npm run lint:ci --workspaces --if-present",
     "build": "npm run build --workspaces --if-present",
-    "publish:local": "npm run publish --workspaces --if-present",
+    "publish:local": "npm run publish:local --workspaces --if-present",
     "publish:npm": "npm run publish:npm --workspaces --if-present"
   },
   "repository": {
@@ -12,5 +14,8 @@
   },
   "workspaces": [
     "./packages/*"
-  ]
+  ],
+  "devDependencies": {
+    "eslint": "^8.17.0"
+  }
 }
