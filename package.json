@@ -6,7 +6,8 @@
     "lint:ci": "npm run lint:ci --workspaces --if-present",
     "build": "npm run build --workspaces --if-present",
     "publish:local": "npm run publish:local --workspaces --if-present",
-    "publish:npm": "npm run publish:npm --workspaces --if-present"
+    "publish:npm": "npm run publish:npm --workspaces --if-present",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -16,6 +17,11 @@
     "./packages/*"
   ],
   "devDependencies": {
-    "eslint": "^8.17.0"
+    "@commitlint/cli": "^17.0.2",
+    "@commitlint/config-conventional": "^17.0.2",
+    "@semantic-release/git": "^10.0.1",
+    "eslint": "^8.17.0",
+    "husky": "^8.0.1",
+    "semantic-release": "^19.0.3"
   }
 }
