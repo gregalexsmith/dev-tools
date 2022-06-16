@@ -5,7 +5,10 @@ module.exports = {
     [
       '@semantic-release/commit-analyzer',
       {
-        releaseRules: [{ scope: 'repo|eslint-config', release: false }]
+        releaseRules: [
+          { scope: 'repo', release: false },
+          { scope: 'eslint-config', release: false }
+        ]
       }
     ]
   ]

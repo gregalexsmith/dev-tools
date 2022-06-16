@@ -5,7 +5,10 @@ module.exports = {
     [
       '@semantic-release/commit-analyzer',
       {
-        releaseRules: [{ scope: 'repo|components', release: false }]
+        releaseRules: [
+          { scope: 'repo', release: false },
+          { scope: 'components', release: false }
+        ]
       }
     ]
   ]
