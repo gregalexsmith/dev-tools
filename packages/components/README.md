@@ -4,3 +4,9 @@
 
 React Component library
 
+## Getting started
+
+Install
+```
+npm i -D @gregalexsmith/components
+```
