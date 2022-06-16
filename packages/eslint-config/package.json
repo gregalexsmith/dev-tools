@@ -1,10 +1,9 @@
 {
-  "name": "eslint-config",
+  "name": "@gregalexsmith/eslint-config",
+  "description": "eslint config",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint --fix"
   },
   "devDependencies": {
@@ -15,9 +14,16 @@
     "eslint-import-resolver-typescript": "^2.7.1",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-react": "^7.30.0",
-    "prettier": "2.6.2"
+    "eslint-plugin-react": "^7.30.0"
   },
   "author": "greg smith",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gregalexsmith/dev-tools.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gregalexsmith/dev-tools/issues"
+  },
+  "homepage": "https://github.com/gregalexsmith/dev-tools#readme"
 }

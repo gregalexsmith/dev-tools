@@ -25,7 +25,6 @@
   ],
   "name": "@gregalexsmith/components",
   "description": "React component library",
-  "private": false,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gregalexsmith/dev-tools.git"
