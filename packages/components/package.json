@@ -3,7 +3,7 @@
   "scripts": {
     "build": "tsc",
     "publish:local": "yalc publish",
-    "publish:npm": "npx semantic-release --dry-run",
+    "publish:npm": "npx semantic-release",
     "lint": "eslint --fix .",
     "lint:ci": "eslint ."
   },
