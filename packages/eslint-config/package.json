@@ -1,7 +1,7 @@
 {
   "name": "@gregalexsmith/eslint-config",
   "description": "eslint config",
-  "version": "1.0.0",
+  "version": "0.0.0-dev",
   "main": "index.js",
   "scripts": {
     "lint": "eslint --fix",
