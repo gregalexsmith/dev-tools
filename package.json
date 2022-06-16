@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "build": "npm run build --workspaces --if-present",
-    "publish": "npm run dev:publish --workspaces --if-present",
-    "dev:publish": "npm run build && npm run publish"
+    "publish:local": "npm run publish --workspaces --if-present",
+    "publish:npm": "npm run publish:npm --workspaces --if-present"
   },
   "repository": {
     "type": "git",
