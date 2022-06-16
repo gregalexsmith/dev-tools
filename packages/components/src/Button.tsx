@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react';
 import styled from 'styled-components';
 
 export const StyledButton = styled.button`
-  background: #ccc;
+  background: #eee;
 `;
 
 type Props = {
