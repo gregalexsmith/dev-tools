@@ -1,3 +1,5 @@
+![npm (scoped)](https://img.shields.io/npm/v/@gregalexsmith/eslint-config)
+
 # @gregalexsmith/eslint-config
 
 An eslint configuration for `react` & `typescript` projects
