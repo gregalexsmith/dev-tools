@@ -5,11 +5,7 @@ module.exports = {
     [
       '@semantic-release/commit-analyzer',
       {
-        preset: 'angular',
-        releaseRules: [{ scope: 'components', release: true }],
-        parserOpts: {
-          noteKeywords: ['BREAKING CHANGE', 'BREAKING CHANGES']
-        }
+        releaseRules: [{ scope: 'repo|eslint-config', release: false }]
       }
     ]
   ]
