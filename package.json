@@ -8,7 +8,8 @@
     "build": "npm run build --workspaces --if-present",
     "publish:local": "npm run publish:local --workspaces --if-present",
     "publish:npm": "npm run publish:npm --workspaces --if-present",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "update": "node ./packages/scripts update"
   },
   "repository": {
     "type": "git",

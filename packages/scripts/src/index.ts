@@ -14,4 +14,11 @@ program
     (await import('./commands')).publish();
   });
 
+program
+  .command('update')
+  .description('Update an npm package version')
+  .action(async () => {
+    (await import('./commands')).update();
+  });
+
 program.parse();
