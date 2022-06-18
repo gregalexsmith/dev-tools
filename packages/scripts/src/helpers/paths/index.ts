@@ -8,6 +8,6 @@ const appDirectory = fs.realpathSync(process.cwd());
 const resolveApp = (relativePath: string) =>
   path.resolve(appDirectory, relativePath);
 
-export default {
+export const paths = {
   appPackageJson: resolveApp('package.json')
 };

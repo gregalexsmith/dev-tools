@@ -4,7 +4,7 @@ type Options = {
   shouldLog: boolean;
 };
 
-const defaultOptions = { shouldLog: false };
+const defaultOptions = { shouldLog: true };
 
 export interface ExecError extends Error {
   error?: typeof Error;
