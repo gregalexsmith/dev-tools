@@ -22,6 +22,7 @@ const main = async () => {
     await execShell('npm publish', { shouldLog: true });
   } catch (error) {
     console.log('caught error', error);
+    throw error;
   }
 };
 
