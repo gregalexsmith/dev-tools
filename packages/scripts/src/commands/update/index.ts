@@ -29,7 +29,5 @@ export const update = async () => {
     }
   ]);
 
-  await execShell(`npm version ${updateType} --workspace=${packageName}`, {
-    shouldLog: true
-  });
+  await execShell(`npm version ${updateType} --workspace=${packageName}`);
 };

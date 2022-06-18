@@ -17,12 +17,12 @@ export const publish = async () => {
 
     if (scripts.build) {
       console.log(`Building ${name} ...`);
-      await execShell('npm run build', { shouldLog: true });
+      await execShell('npm run build');
     }
 
     console.log(`Publishing ${name} ...`);
     if (!process.env.NPM_AUTH_TOKEN) throw new Error('Midding NPM Auth Token');
-    await execShell('npm publish', { shouldLog: true });
+    await execShell('npm publish');
   } catch (error) {
     console.log('caught error', error);
     process.exit(1);
