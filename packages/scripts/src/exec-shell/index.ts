@@ -29,16 +29,12 @@ export const execShell = (
       });
 
       if (error) {
-        shouldLog && console.warn('error', error);
+        // shouldLog && console.warn('error', error);
         return reject(newError);
       }
 
       if (stderr) {
-        shouldLog && console.warn('stderror', stderr);
-        const newError = new Error('Error');
-        Object.assign(newError, {
-          description: stderr
-        });
+        // shouldLog && console.warn('stderror', stderr);
         return reject(newError);
       }
     });

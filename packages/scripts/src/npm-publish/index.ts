@@ -16,7 +16,9 @@ const main = async () => {
 
     if (!shouldPublish) return console.log('Not Publishing');
 
+    console.log(`Building ${name} ...`);
     await execShell('npm run build', { shouldLog: true });
+    console.log(`Publishing ${name} ...`);
     await execShell('npm publish', { shouldLog: true });
   } catch (error) {
     console.log('caught error', error);
