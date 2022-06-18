@@ -1,15 +1,16 @@
 {
   "name": "@gregalexsmith/eslint-config",
   "description": "eslint config",
-  "version": "0.0.0-dev",
+  "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "lint": "eslint --fix",
     "lint:ci": "eslint .",
     "publish:local": "yalc publish",
-    "publish:npm": "npx semantic-release --dry-run"
+    "publish:npm": "scripts publish"
   },
   "devDependencies": {
+    "@gregalexsmith/scripts": "1.0.0",
     "@types/node": "^18.0.0",
     "@typescript-eslint/eslint-plugin": "^5.28.0",
     "@typescript-eslint/parser": "^5.28.0",

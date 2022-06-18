@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "lib": [
+            "es2021"
+        ],
+        "module": "commonjs",
+        "target": "es2021",
+        "moduleResolution": "node",
+        "strict": true,
+        "esModuleInterop": true,
+        "declaration": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "outDir": "build"
+    },
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "display": "Recommended",
+    "include": [
+        "src/**/*.ts*"
+    ]
+}
