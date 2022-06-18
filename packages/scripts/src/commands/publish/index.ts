@@ -1,9 +1,8 @@
 import { gt } from 'semver';
-import { execShell } from '../exec-shell';
-import { getRemoteVersion } from '../get-remote-version';
-import paths from '../paths';
+import { execShell, paths } from '../../helpers';
+import { getRemoteVersion } from './get-remote-version';
 
-const main = async () => {
+export const publish = async () => {
   try {
     const localPackageJson = await import(paths.appPackageJson);
     const { name, version, scripts } = localPackageJson;
@@ -29,5 +28,3 @@ const main = async () => {
     process.exit(1);
   }
 };
-
-export default main;

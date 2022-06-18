@@ -11,7 +11,7 @@ program
     'Publish a package to npm - checks for a new version and runs build prior to publish'
   )
   .action(async () => {
-    (await import('./npm-publish')).default();
+    (await import('./commands')).publish();
   });
 
 program.parse();

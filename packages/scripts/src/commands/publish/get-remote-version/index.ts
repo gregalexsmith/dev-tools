@@ -1,4 +1,4 @@
-import { ExecError, execShell } from '../exec-shell';
+import { ExecError, execShell } from '../../../helpers';
 
 const is404 = (value: string) => value.includes('404');
 
