@@ -5,7 +5,7 @@ const is404 = (value: string) => value.includes('404');
 export const getRemoteVersion = async (name: string): Promise<string> => {
   try {
     const remoteVersion = (await execShell(
-      `npm view "${name}" --workspace="../../package.json"  version`
+      `npm view "${name}" --workspace="../../package.json" version`
     )) as string;
 
     if (!remoteVersion) {
