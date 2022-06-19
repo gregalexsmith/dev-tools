@@ -21,7 +21,7 @@ export const publish = async () => {
     }
 
     console.log(`Publishing ${name} ...`);
-    if (!process.env.NPM_AUTH_TOKEN) throw new Error('Midding NPM Auth Token');
+    // if (!process.env.NPM_AUTH_TOKEN) throw new Error('Missing NPM Auth Token');
     await execShell('npm publish');
   } catch (error) {
     console.log('caught error', error);
