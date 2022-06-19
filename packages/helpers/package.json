@@ -14,9 +14,13 @@
     "lint": "eslint --fix .",
     "lint:ci": "eslint ."
   },
+  "peerDependencies": {
+    "react": "^18.1.0"
+  },
   "devDependencies": {
     "@gregalexsmith/scripts": "1.0.0",
-    "@types/ramda": "^0.28.14"
+    "@types/ramda": "^0.28.14",
+    "@types/react": "^18.0.12"
   },
   "repository": {
     "type": "git",
