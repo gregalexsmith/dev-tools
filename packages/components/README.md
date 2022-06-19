@@ -8,5 +8,5 @@ React Component library
 
 Install
 ```
-npm i -D @gregalexsmith/components
+npm i @gregalexsmith/components
 ```

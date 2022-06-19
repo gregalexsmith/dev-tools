@@ -1,6 +1,7 @@
 {
   "name": "dev-tools",
   "version": "1.0.0",
+  "description": "Development tools monorepo",
   "scripts": {
     "lint": "npm run lint --workspaces --if-present",
     "lint:ci": "npm run lint:ci --workspaces --if-present",

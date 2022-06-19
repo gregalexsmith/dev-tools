@@ -1,5 +1,12 @@
 {
+  "name": "@gregalexsmith/components",
   "version": "1.0.2",
+  "description": "React component library",
+  "main": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "files": [
+    "build"
+  ],
   "scripts": {
     "build": "tsc",
     "publish:local": "yalc publish",
@@ -19,15 +26,9 @@
     "@types/react": "^18.0.12",
     "@types/styled-components": "^5.1.25"
   },
-  "main": "./build/index.js",
-  "types": "./build/index.d.ts",
-  "files": [
-    "build"
-  ],
-  "name": "@gregalexsmith/components",
-  "description": "React component library",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gregalexsmith/dev-tools.git"
-  }
+  },
+  "homepage": "https://github.com/gregalexsmith/components#readme"
 }
