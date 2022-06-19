@@ -6,7 +6,7 @@ module.exports = {
     'scope-enum': [
       2,
       'always',
-      ['repo', 'components', 'eslint-config', 'scripts']
+      ['repo', 'components', 'eslint-config', 'helpers', 'scripts']
     ]
   }
 };

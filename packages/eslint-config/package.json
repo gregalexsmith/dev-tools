@@ -22,8 +22,6 @@
     "@gregalexsmith/scripts": "1.0.0",
     "@types/node": "^18.0.0"
   },
-  "author": "greg smith",
-  "license": "ISC",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gregalexsmith/dev-tools.git"
@@ -31,5 +29,5 @@
   "bugs": {
     "url": "https://github.com/gregalexsmith/dev-tools/issues"
   },
-  "homepage": "https://github.com/gregalexsmith/dev-tools#readme"
+  "homepage": "https://github.com/gregalexsmith/dev-tools/packages/eslint-config#readme"
 }

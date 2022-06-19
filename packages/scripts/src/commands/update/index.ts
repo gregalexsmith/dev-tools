@@ -2,7 +2,7 @@
 import prompts from 'prompts';
 import { execShell } from '../../helpers';
 
-const publishedPackages = ['components', 'eslint-config'];
+const publishedPackages = ['components', 'eslint-config', 'helpers'];
 const bumpTypes = ['major', 'minor', 'patch'];
 
 export const update = async () => {
