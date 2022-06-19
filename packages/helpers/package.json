@@ -15,7 +15,8 @@
     "lint:ci": "eslint ."
   },
   "devDependencies": {
-    "@gregalexsmith/scripts": "1.0.0"
+    "@gregalexsmith/scripts": "1.0.0",
+    "@types/ramda": "^0.28.14"
   },
   "repository": {
     "type": "git",
@@ -24,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/gregalexsmith/dev-tools/issues"
   },
-  "homepage": "https://github.com/gregalexsmith/dev-tools#readme"
+  "homepage": "https://github.com/gregalexsmith/dev-tools#readme",
+  "dependencies": {
+    "ramda": "^0.28.0"
+  }
 }
