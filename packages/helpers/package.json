@@ -9,6 +9,7 @@
   ],
   "scripts": {
     "build": "tsc",
+    "dev": "tsc -w",
     "publish:local": "yalc publish",
     "publish:npm": "scripts publish",
     "lint": "eslint --fix .",
@@ -31,6 +32,7 @@
   },
   "homepage": "https://github.com/gregalexsmith/dev-tools#readme",
   "dependencies": {
-    "ramda": "^0.28.0"
+    "ramda": "^0.28.0",
+    "styled-components": "^5.3.5"
   }
 }
