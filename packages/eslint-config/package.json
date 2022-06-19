@@ -1,7 +1,7 @@
 {
   "name": "@gregalexsmith/eslint-config",
   "description": "eslint config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "scripts": {
     "lint": "eslint --fix",
@@ -9,9 +9,7 @@
     "publish:local": "yalc publish",
     "publish:npm": "scripts publish"
   },
-  "devDependencies": {
-    "@gregalexsmith/scripts": "1.0.0",
-    "@types/node": "^18.0.0",
+  "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.28.0",
     "@typescript-eslint/parser": "^5.28.0",
     "eslint-config-prettier": "^8.5.0",
@@ -19,6 +17,10 @@
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.30.0"
+  },
+  "devDependencies": {
+    "@gregalexsmith/scripts": "1.0.0",
+    "@types/node": "^18.0.0"
   },
   "author": "greg smith",
   "license": "ISC",
