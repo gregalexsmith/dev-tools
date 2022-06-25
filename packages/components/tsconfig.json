@@ -15,5 +15,8 @@
     "display": "Recommended",
     "include": [
         "src/**/*.ts*"
+    ],
+    "exclude": [
+        "src/**/*.fixture.*"
     ]
 }
