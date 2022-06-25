@@ -2,6 +2,7 @@
   "name": "@gregalexsmith/components",
   "version": "1.0.2",
   "description": "React component library",
+  "license": "MIT",
   "main": "./build/index.js",
   "types": "./build/index.d.ts",
   "files": [
@@ -9,6 +10,8 @@
   ],
   "scripts": {
     "build": "tsc",
+    "build:watch": "tsc -w",
+    "types:watch": "tsc --noEmit -w",
     "publish:local": "yalc publish",
     "publish:npm": "scripts publish",
     "lint": "eslint --fix .",
@@ -21,6 +24,7 @@
   "dependencies": {
     "@gregalexsmith/helpers": "file:../helpers",
     "styled-components": "^5.3.5",
+    "styled-system": "^5.1.5",
     "typescript": "^4.7.3"
   },
   "devDependencies": {
@@ -31,8 +35,12 @@
     "@babel/preset-typescript": "^7.17.12",
     "@babel/runtime": "^7.18.3",
     "@gregalexsmith/scripts": "1.0.0",
+    "@styled-system/should-forward-prop": "^5.1.5",
     "@types/react": "^18.0.12",
     "@types/styled-components": "^5.1.25",
+    "@types/styled-system": "^5.1.15",
+    "@types/styled-system__css": "^5.0.16",
+    "@types/styled-system__should-forward-prop": "^5.1.2",
     "babel-loader": "^8.2.5",
     "html-webpack-plugin": "^5.5.0",
     "react-cosmos": "^5.7.2"
