@@ -18,7 +18,6 @@
     ],
     "exclude": [
         "build",
-        "src/**/*.fixture.*",
-        "src/**/__fixtures__/**"
+        "src/**/*.stories.*"
     ]
 }
