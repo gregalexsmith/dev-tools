@@ -32,7 +32,6 @@
   },
   "homepage": "https://github.com/gregalexsmith/dev-tools#readme",
   "dependencies": {
-    "ramda": "^0.28.0",
-    "styled-components": "^5.3.5"
+    "ramda": "^0.28.0"
   }
 }
