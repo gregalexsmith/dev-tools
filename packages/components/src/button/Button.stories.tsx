@@ -11,5 +11,7 @@ export const Primary = (args) => <Button {...args}>Button</Button>;
 Primary.storyName = 'Button';
 
 Primary.args = {
-  size: 'md'
+  size: 'md',
+  color: 'primary',
+  outline: false
 };
