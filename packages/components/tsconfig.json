@@ -18,6 +18,7 @@
     ],
     "exclude": [
         "build",
-        "src/**/*.fixture.*"
+        "src/**/*.fixture.*",
+        "src/**/__fixtures__/**"
     ]
 }
