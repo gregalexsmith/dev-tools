@@ -16,7 +16,9 @@
     "publish:npm": "scripts publish",
     "lint": "eslint --fix .",
     "lint:ci": "eslint .",
-    "cosmos": "cosmos"
+    "cosmos": "cosmos",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "peerDependencies": {
     "react": "^18.1.0"
@@ -25,6 +27,7 @@
     "@gregalexsmith/helpers": "file:../helpers",
     "styled-components": "^5.3.5",
     "styled-system": "^5.1.5",
+    "tailwindcss": "^3.1.4",
     "typescript": "^4.7.3"
   },
   "devDependencies": {
@@ -35,15 +38,29 @@
     "@babel/preset-typescript": "^7.17.12",
     "@babel/runtime": "^7.18.3",
     "@gregalexsmith/scripts": "1.0.0",
+    "@storybook/addon-actions": "^6.5.9",
+    "@storybook/addon-essentials": "^6.5.9",
+    "@storybook/addon-interactions": "^6.5.9",
+    "@storybook/addon-links": "^6.5.9",
+    "@storybook/addon-postcss": "^2.0.0",
+    "@storybook/builder-webpack5": "^6.5.9",
+    "@storybook/manager-webpack5": "^6.5.9",
+    "@storybook/react": "^6.5.9",
+    "@storybook/testing-library": "^0.0.13",
     "@styled-system/should-forward-prop": "^5.1.5",
     "@types/react": "^18.0.12",
     "@types/styled-components": "^5.1.25",
     "@types/styled-system": "^5.1.15",
     "@types/styled-system__css": "^5.0.16",
     "@types/styled-system__should-forward-prop": "^5.1.2",
+    "autoprefixer": "^10.4.7",
     "babel-loader": "^8.2.5",
     "html-webpack-plugin": "^5.5.0",
-    "react-cosmos": "^5.7.2"
+    "postcss": "^8.4.14",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-is": "^18.2.0",
+    "webpack": "^5.73.0"
   },
   "repository": {
     "type": "git",
