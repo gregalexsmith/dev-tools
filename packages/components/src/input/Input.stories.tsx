@@ -1,11 +1,15 @@
-/* eslint-disable import/export */
 import React from 'react';
-import * as Components from '.';
-
-// Button.stories.js|jsx
+import { Input } from '.';
 
 export default {
-  component: Components.Input
+  title: 'Input',
+  component: Input
 };
 
-export const Input = () => <Components.Input />;
+export const Primary = (args) => <Input {...args} />;
+
+Primary.storyName = 'Input';
+
+Primary.args = {
+  size: 'md'
+};

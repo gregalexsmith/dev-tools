@@ -1,10 +1,16 @@
-/** @type {import('tailwindcss').Config} */
+/* eslint-disable @typescript-eslint/no-var-requires */
+const colors = require('tailwindcss/colors');
 
+/** @type {import('tailwindcss').Config} */
 // eslint-disable-next-line no-undef
 module.exports = {
   content: ['./src/**/*.{html,ts,tsx}'],
   theme: {
-    extend: {}
+    extend: {
+      colors: {
+        primary: colors.blue
+      }
+    }
   },
-  plugins: []
+  plugins: [require('@tailwindcss/forms')]
 };

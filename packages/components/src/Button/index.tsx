@@ -1,14 +1,48 @@
-import React, { ReactNode } from 'react';
-import styled from 'styled-components';
+import React, { FC, ComponentProps } from 'react';
+import classNames from 'classnames';
 
-export const StyledButton = styled.button`
-  background: #eee;
-`;
+type Size = 'sm' | 'md' | 'lg';
 
-type Props = {
-  children: ReactNode;
+type ButtonColor = 'primary';
+
+export interface ButtonProps extends Omit<ComponentProps<'button'>, 'color'> {
+  size?: Size;
+  color?: ButtonColor;
+}
+
+const colorStyles = (color: ButtonColor) =>
+  ({
+    primary:
+      'bg-primary-700 text-white hover:bg-primary-800 focus:ring-primary-300' +
+      'dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800'
+  }[color]);
+
+export const Button: FC<ButtonProps> = ({
+  children,
+  size = 'md',
+  type = 'button',
+  color = 'primary',
+  ...props
+}) => {
+  const Component = 'button';
+
+  return (
+    <Component
+      className={classNames(
+        'mr-2 mb-2',
+        'font-medium focus:ring-4',
+        'focus:outline-none',
+        'rounded-md',
+        colorStyles(color),
+        {
+          'px-3 py-1.5 text-sm': size === 'sm',
+          'px-4 py-2 text-md': size === 'md',
+          'px-5 py-2.5 text-lg': size === 'lg'
+        }
+      )}
+      type={type}
+      {...props}>
+      {children}
+    </Component>
+  );
 };
-
-export const Button = ({ children }: Props) => (
-  <StyledButton>{children}</StyledButton>
-);
