@@ -13,6 +13,7 @@ jobs:
         with:
             fetch-depth: 0
       - run: git pull origin main
+      - run: git merge master
         
 
       - name: Use Node.js 16
