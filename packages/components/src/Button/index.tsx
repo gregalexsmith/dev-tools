@@ -37,7 +37,6 @@ export const Button: FC<ButtonProps> = ({
   ...props
 }) => {
   const Component = 'button';
-
   return (
     <Component
       className={classNames(
