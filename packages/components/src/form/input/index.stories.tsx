@@ -1,5 +1,5 @@
 import React from 'react';
-import { IconInfo } from '../icons';
+import { IconInfo } from '../../icons';
 import { Input } from '.';
 
 export default {
