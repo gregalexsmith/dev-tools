@@ -20,7 +20,7 @@
     "prettier": "^2.7.1"
   },
   "devDependencies": {
-    "@gregalexsmith/scripts": "1.0.0",
+    "@gregalexsmith/scripts": "file:../scripts",
     "@types/node": "^18.0.0"
   },
   "repository": {
