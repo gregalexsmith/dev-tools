@@ -26,5 +26,5 @@ jobs:
       - name: Install Dependencies
         run: npm ci
 
-      - name: Lint
-        run: npm run lint:ci
+      # - name: Lint
+      #   run: npm run lint:ci
