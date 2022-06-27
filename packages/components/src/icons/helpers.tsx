@@ -4,7 +4,7 @@ import classNames from 'classnames';
 type BaseSVGProps = ComponentProps<'svg'>;
 
 export type SVGProps = BaseSVGProps & {
-  size: 'xsm' | 'sm' | 'md' | 'lg';
+  size?: 'xsm' | 'sm' | 'md' | 'lg';
 };
 
 export const withDefaults = (Component: FC<BaseSVGProps>) => {
