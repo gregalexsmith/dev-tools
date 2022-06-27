@@ -7,7 +7,6 @@ export default {
 };
 
 export const Primary = (args) => <Button {...args}>Button</Button>;
-
 Primary.storyName = 'Button';
 
 Primary.args = {
