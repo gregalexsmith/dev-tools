@@ -5,12 +5,13 @@
   "scripts": {
     "lint": "npm run lint --workspaces --if-present",
     "lint:ci": "npm run lint:ci --workspaces --if-present",
-    "dev:scripts": "npm run dev --workspace=packages/scripts",
     "build": "npm run build --workspaces --if-present",
     "publish:local": "npm run publish:local --workspaces --if-present",
     "publish:npm": "npm run publish:npm --workspaces --if-present",
     "prepare": "husky install",
-    "update": "node ./packages/scripts update"
+    "update": "node ./packages/scripts update",
+    "dev:scripts": "npm run dev --workspace=packages/scripts",
+    "dev:helpers": "npm run dev --workspace=packages/helpers"
   },
   "repository": {
     "type": "git",

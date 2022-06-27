@@ -9,6 +9,7 @@
   ],
   "scripts": {
     "build": "tsc",
+    "dev": "tsc -w",
     "publish:local": "yalc publish",
     "publish:npm": "scripts publish",
     "lint": "eslint --fix .",
@@ -18,7 +19,7 @@
     "react": "^18.1.0"
   },
   "devDependencies": {
-    "@gregalexsmith/scripts": "1.0.0",
+    "@gregalexsmith/scripts": "file:../scripts",
     "@types/ramda": "^0.28.14",
     "@types/react": "^18.0.12"
   },
