@@ -27,3 +27,7 @@ module.exports = {
   },
 }
 ```
+
+## References:
+- https://tailwindcss.com/
+- https://flowbite.com/
