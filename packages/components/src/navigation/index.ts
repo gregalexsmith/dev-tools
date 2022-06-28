@@ -1,1 +1,2 @@
-export * from './full-navigation';
+export * from './full-nav';
+export * from './simple-nav';
