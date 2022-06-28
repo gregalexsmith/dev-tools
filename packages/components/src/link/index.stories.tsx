@@ -14,7 +14,7 @@ External.args = {
 
 export const Internal = (args) => (
   <MemoryRouter>
-    <Link {...args}>Test external link</Link>;
+    <Link {...args}>Test external link</Link>
   </MemoryRouter>
 );
 Internal.args = {
