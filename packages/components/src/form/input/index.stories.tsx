@@ -3,7 +3,7 @@ import { IconInfo } from '../../icons';
 import { Input } from '.';
 
 export default {
-  title: 'Input',
+  title: 'Form/Input',
   component: Input,
   argTypes: {
     icon: {
