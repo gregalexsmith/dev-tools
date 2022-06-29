@@ -1,18 +1,18 @@
 import React from 'react';
 import { ComponentMeta } from '@storybook/react';
-import { FullNav } from '.';
+import { NavFull } from '.';
 
 export default {
-  title: 'Navigation/FullNav',
-  component: FullNav,
+  title: 'Navigation/NavFull',
+  component: NavFull,
   parameters: {
     layout: 'fullscreen'
   }
-} as ComponentMeta<typeof FullNav>;
+} as ComponentMeta<typeof NavFull>;
 
-export const Primary = (args) => <FullNav {...args} />;
+export const Primary = (args) => <NavFull {...args} />;
 
-Primary.storyName = 'FullNav';
+Primary.storyName = 'NavFull';
 
 Primary.args = {
   logo: 'TestCo',

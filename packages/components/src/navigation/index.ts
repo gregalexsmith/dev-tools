@@ -1,2 +1,2 @@
-export * from './full-nav';
-export * from './simple-nav';
+export * from './nav-full';
+export * from './nav-simple';

@@ -2,12 +2,12 @@ import React, { FC, PropsWithChildren, ReactNode } from 'react';
 import classNames from 'classnames';
 import { Link } from '../../link';
 
-type NavLinkProps = PropsWithChildren & {
+type NavLinkProps = {
   to: string;
-  content: ReactNode;
+  children: ReactNode;
 };
 
-const NavLink: FC<NavLinkProps> = ({ to, content }) => (
+const NavLink: FC<NavLinkProps> = ({ to, children }) => (
   <Link
     to={to}
     className={classNames(
@@ -15,11 +15,16 @@ const NavLink: FC<NavLinkProps> = ({ to, content }) => (
       'text-neutral-600',
       'hover:text-neutral-900 hover:no-underline'
     )}>
-    {content}
+    {children}
   </Link>
 );
 
-const SimpleNavBase: FC<PropsWithChildren> = ({ children }) => (
+type NavSimpleBaseProps = {
+  title: ReactNode;
+  children: ReactNode;
+};
+
+const NavSimpleBase: FC<NavSimpleBaseProps> = ({ title, children }) => (
   <div className="flex items-center">
     <h1
       className={classNames(
@@ -28,7 +33,7 @@ const SimpleNavBase: FC<PropsWithChildren> = ({ children }) => (
         'font-bold',
         'text-neutral-600'
       )}>
-      React Starter
+      {title}
     </h1>
 
     <div className="mx-auto" />
@@ -37,6 +42,6 @@ const SimpleNavBase: FC<PropsWithChildren> = ({ children }) => (
   </div>
 );
 
-export const SimpleNav = Object.assign(SimpleNavBase, {
-  NavLink
+export const NavSimple = Object.assign(NavSimpleBase, {
+  Link: NavLink
 });

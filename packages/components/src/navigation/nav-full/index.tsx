@@ -35,13 +35,13 @@ type NavItem = {
   current: boolean;
 };
 
-export type FullNavProps = {
+export type NavFullProps = {
   logo: ReactNode;
   rightContent?: ReactNode;
   items: NavItem[];
 };
 
-export const FullNav: FC<FullNavProps> = ({ logo, rightContent, items }) => {
+export const NavFull: FC<NavFullProps> = ({ logo, rightContent, items }) => {
   return (
     <Disclosure as="nav" className="bg-gray-100 dark:bg-gray-800">
       {({ open }) => (
