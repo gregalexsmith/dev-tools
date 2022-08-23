@@ -21,7 +21,7 @@ jobs:
       - run: npm ci
 
       - name: Build storybook
-        run: npm run storybook:build -w components
+        run: npm run storybook:build -w packages/components
       
       - name: Deploy Site
         env:
