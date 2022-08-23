@@ -1,0 +1,31 @@
+name: Deploy the Components Storybook
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'packages/components/**'
+
+jobs:
+  publish:
+    name: Publish
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: 'npm'
+      - run: npm ci
+
+      - name: Build storybook
+        run: npm run storybook:build -w packages/components
+      
+      - name: Deploy Site
+        env:
+          CI: true
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+        run: npx netlify-cli deploy --dir=packages/components/storybook-static --prod
+

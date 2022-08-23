@@ -8,6 +8,9 @@ Storybook: https://dev-tools-components.netlify.app/
 
 ## Getting started
 
+Dependancies:
+[Setup your project with Tailwind](https://tailwindcss.com/docs/installation)
+
 Install:
 ```shell
 npm i @gregalexsmith/components
