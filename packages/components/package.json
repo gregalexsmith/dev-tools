@@ -1,6 +1,6 @@
 {
   "name": "@gregalexsmith/components",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "React component library",
   "license": "MIT",
   "main": "./build/index.js",
@@ -10,8 +10,8 @@
     "tailwind.config.js"
   ],
   "scripts": {
-    "build": "tsc",
-    "build:watch": "tsc -w",
+    "build": "tsup src/index.ts --format esm,cjs --dts --external react --outDir build",
+    "build:watch": "npm run build -- --watch",
     "types:watch": "tsc --noEmit -w",
     "publish:local": "yalc publish",
     "publish:npm": "scripts publish",
@@ -63,6 +63,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-is": "^18.2.0",
+    "tsup": "^6.5.0",
     "webpack": "^5.73.0"
   },
   "repository": {
