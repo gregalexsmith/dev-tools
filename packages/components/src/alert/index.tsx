@@ -28,13 +28,18 @@ const getIcon = (type: AlertType) =>
     error: IconError
   }[type]);
 
-export const Alert: FC<AlertProps> = ({ children, type = 'info' }) => {
+export const Alert: FC<AlertProps> = ({
+  children,
+  type = 'info',
+  className
+}) => {
   const Icon = getIcon(type);
   return (
     <div
       className={classNames(
         'flex p-4 mb-4 text-sm rounded-lg',
-        alertTypeStyles(type)
+        alertTypeStyles(type),
+        className
       )}
       role="alert">
       <Icon className="inline flex-shrink-0 mr-3 w-5 h-5" />

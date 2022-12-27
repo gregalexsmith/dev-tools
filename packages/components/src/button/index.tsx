@@ -34,6 +34,7 @@ export const Button: FC<ButtonProps> = ({
   type = 'button',
   color = 'primary',
   outline = false,
+  className,
   ...props
 }) => {
   const Component = 'button';
@@ -51,7 +52,8 @@ export const Button: FC<ButtonProps> = ({
           'px-3 py-1.5 text-sm': size === 'sm',
           'px-4 py-2 text-md': size === 'md',
           'px-5 py-2.5 text-lg': size === 'lg'
-        }
+        },
+        className
       )}
       type={type}
       {...props}>
