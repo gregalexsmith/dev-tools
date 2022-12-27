@@ -11,7 +11,7 @@
   ],
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --dts --external react --outDir build",
-    "build:watch": "npm run build -- --watch",
+    "dev": "npm run build -- --watch",
     "types:watch": "tsc --noEmit -w",
     "publish:local": "yalc publish",
     "publish:npm": "scripts publish",

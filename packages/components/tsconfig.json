@@ -1,4 +1,12 @@
 {
+    "display": "Recommended",
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "build",
+        "src/**/*.stories.*"
+    ],
     "compilerOptions": {
         "target": "ES2015",
         "module": "es6",
@@ -10,14 +18,5 @@
         "jsx": "react",
         "outDir": "build",
         "moduleResolution": "node"
-    },
-    "$schema": "https://json.schemastore.org/tsconfig",
-    "display": "Recommended",
-    "include": [
-        "src/**/*"
-    ],
-    "exclude": [
-        "build",
-        "src/**/*.stories.*"
-    ]
+    }
 }
