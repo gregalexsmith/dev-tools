@@ -1,3 +1,4 @@
+import { themes } from '@storybook/theming';
 import './index.css'
 
 export const parameters = {
@@ -8,4 +9,10 @@ export const parameters = {
       date: /Date$/,
     },
   },
+  darkMode: {
+    // Override the default dark theme
+    dark: { ...themes.dark,  },
+    // Override the default light theme
+    light: { ...themes.normal,  }
+  }
 }

@@ -13,6 +13,7 @@ export default {
 };
 
 export const Primary = (args) => {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [Icons, SetIcons] = useState<null | any[]>(null);
 
   useEffect(() => {

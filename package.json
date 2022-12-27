@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "Development tools monorepo",
   "scripts": {
-    "lint": "npm run lint --workspaces --if-present",
+    "lint": "turbo run lint",
     "lint:ci": "npm run lint:ci --workspaces --if-present",
-    "build": "npm run build --workspaces --if-present",
+    "build": "turbo run build",
+    "dev": "turbo run dev",
     "publish:local": "npm run publish:local --workspaces --if-present",
     "publish:npm": "npm run publish:npm --workspaces --if-present",
     "prepare": "husky install",
@@ -26,6 +27,7 @@
     "@commitlint/cli": "^17.0.2",
     "@commitlint/config-conventional": "^17.0.2",
     "eslint": "^8.17.0",
-    "husky": "^8.0.1"
+    "husky": "^8.0.1",
+    "turbo": "^1.6.3"
   }
 }
