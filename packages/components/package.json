@@ -63,6 +63,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-is": "^18.2.0",
+    "storybook-dark-mode": "^2.0.4",
     "tsup": "^6.5.0",
     "webpack": "^5.73.0"
   },
