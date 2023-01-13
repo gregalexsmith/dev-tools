@@ -15,5 +15,14 @@ module.exports = {
     },
   ],
   "framework": "@storybook/react",
-   core: { builder: "@storybook/builder-vite" }
+   core: { builder: "@storybook/builder-vite" },
+   async viteFinal(config) {
+    return {
+      ...config,
+      define: {
+        ...config.define,
+        global: "window",
+      },
+    };
+  },
 }

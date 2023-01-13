@@ -1,6 +1,11 @@
 import { themes } from '@storybook/theming';
 import './index.css'
 
+// Temp fix for vite + jest + storyook
+// https://github.com/storybookjs/storybook/issues/15391#issuecomment-869229982
+import * as jest from "jest-mock";
+window.jest = jest;
+
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
   layout: 'centered',
