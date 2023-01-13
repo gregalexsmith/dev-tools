@@ -63,5 +63,8 @@
     "type": "git",
     "url": "git+https://github.com/gregalexsmith/dev-tools.git"
   },
-  "homepage": "https://github.com/gregalexsmith/components#readme"
+  "bugs": {
+    "url": "https://github.com/gregalexsmith/dev-tools/issues"
+  },
+  "homepage": "https://github.com/gregalexsmith/dev-tools/packages/components#readme"
 }

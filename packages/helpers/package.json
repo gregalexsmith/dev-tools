@@ -31,7 +31,7 @@
   "bugs": {
     "url": "https://github.com/gregalexsmith/dev-tools/issues"
   },
-  "homepage": "https://github.com/gregalexsmith/dev-tools#readme",
+  "homepage": "https://github.com/gregalexsmith/dev-tools/packages/helpers#readme",
   "dependencies": {
     "ramda": "^0.28.0"
   }
