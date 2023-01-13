@@ -1,11 +1,12 @@
 {
   "name": "@gregalexsmith/helpers",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "./build/index.js",
+  "module": "./build/index.mjs",
   "types": "./build/index.d.ts",
   "files": [
-    "build"
+    "build/**"
   ],
   "scripts": {
     "build": "tsc -p tsconfig.json",
@@ -30,7 +31,7 @@
   "bugs": {
     "url": "https://github.com/gregalexsmith/dev-tools/issues"
   },
-  "homepage": "https://github.com/gregalexsmith/dev-tools#readme",
+  "homepage": "https://github.com/gregalexsmith/dev-tools/packages/helpers#readme",
   "dependencies": {
     "ramda": "^0.28.0"
   }
