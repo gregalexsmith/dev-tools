@@ -4,9 +4,10 @@
   "description": "React component library",
   "license": "MIT",
   "main": "./build/index.js",
+  "module": "./build/index.mjs",
   "types": "./build/index.d.ts",
   "files": [
-    "build",
+    "build/**",
     "tailwind.config.js"
   ],
   "scripts": {

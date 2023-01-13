@@ -3,9 +3,10 @@
   "version": "1.0.1",
   "description": "",
   "main": "./build/index.js",
+  "module": "./build/index.mjs",
   "types": "./build/index.d.ts",
   "files": [
-    "build"
+    "build/**"
   ],
   "scripts": {
     "build": "tsc -p tsconfig.json",
