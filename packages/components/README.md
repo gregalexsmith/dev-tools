@@ -8,15 +8,14 @@ Storybook: https://dev-tools-components.netlify.app/
 
 ## Getting started
 
-Dependancies:
+1. Dependancies:
 [Setup your project with Tailwind](https://tailwindcss.com/docs/installation)
 
-Install:
+1. Install:
 ```shell
 npm i @gregalexsmith/components
 ```
-
-Starting `tailwind.config.js`:
+3. Update the project's `tailwind.config.js`:
 ```js
 /** @type {import('tailwindcss').Config} */
 module.exports = {
