@@ -14,7 +14,9 @@
     "dev:scripts": "npm run dev --workspace=packages/scripts",
     "dev:helpers": "npm run dev --workspace=packages/helpers",
     "storybook": "npm run storybook --workspaces --if-present",
-    "storybook:build": "npm run storybook:build --workspaces --if-present"
+    "storybook:build": "npm run storybook:build --workspaces --if-present",
+    "version": "changeset version && npm install",
+    "publish": "npm run build && changeset publish"
   },
   "repository": {
     "type": "git",
